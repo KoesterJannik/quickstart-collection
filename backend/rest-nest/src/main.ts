@@ -7,6 +7,9 @@ async function bootstrap() {
   const configService = app.get(ConfigService);
   const PORT = configService.get<number>('PORT');
   app.useGlobalPipes(new ValidationPipe());
+  app.enableCors({
+    origin: '*',
+  });
   await app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
   });

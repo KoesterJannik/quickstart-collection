@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { ConfigModule } from '@nestjs/config';
-import Joi from 'joi';
+import * as Joi from 'joi';
 
 const ENV_VARIABLES_SCHEMA = Joi.object({
   DATABASE_URL: Joi.string().required(),

@@ -22,7 +22,7 @@ async function register(){
   // move the user to /dashboard
   router.push('/dashboard')
   } catch (error:any) {
-    console.log(error.response.data)
+
     errorMessage.value = error.response.data
     
   }

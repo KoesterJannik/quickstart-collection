@@ -20,7 +20,7 @@ async function register(){
   await userStore.getUserDetails()
   // move the user to /dashboard
   router.push('/dashboard')
-  } catch (error) {
+  } catch (error:any) {
     errorMessage.value = error.response.data
   }
 

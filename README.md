@@ -12,4 +12,4 @@ All templates contain the same functionality
 
 This is for seeing how various technologies work together and how to implement them.
 
-Fullstack versions with Next,Nuxt and Sveltekit work on their own
+Rename the .env.example to .env for your frontend and backend and then run the project.

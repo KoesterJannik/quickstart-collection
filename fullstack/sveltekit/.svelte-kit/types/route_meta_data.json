@@ -1,0 +1,26 @@
+{
+	"/(public)": [],
+	"/(authenticated)": [
+		"src/routes/(authenticated)/+layout.server.ts"
+	],
+	"/": [],
+	"/(authenticated)/authenticated": [
+		"src/routes/(authenticated)/+layout.server.ts"
+	],
+	"/(authenticated)/authenticated/dashboard": [
+		"src/routes/(authenticated)/+layout.server.ts"
+	],
+	"/(authenticated)/authenticated/products": [
+		"src/routes/(authenticated)/+layout.server.ts"
+	],
+	"/(authenticated)/authenticated/profile": [
+		"src/routes/(authenticated)/authenticated/profile/+page.server.ts",
+		"src/routes/(authenticated)/+layout.server.ts"
+	],
+	"/(public)/login": [
+		"src/routes/(public)/login/+page.server.ts"
+	],
+	"/(public)/register": [
+		"src/routes/(public)/register/+page.server.ts"
+	]
+}

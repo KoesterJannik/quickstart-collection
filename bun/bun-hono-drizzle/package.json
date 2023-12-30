@@ -1,0 +1,17 @@
+{
+  "name": "ssr-starter-hono-drizzle",
+  "module": "src/index.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.tsx"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "hono": "^3.11.11"
+  }
+}

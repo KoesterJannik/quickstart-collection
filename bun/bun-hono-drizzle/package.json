@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "dev": "bun --watch src/index.tsx",
-    "db:generate": "drizzle-kit generate:pg"
+    "db:generate": "npx drizzle-kit generate:pg",
+    "db:migrate": "bun src/db/migration/index.ts",
+    "db:studio": "bunx drizzle-kit studio"
   },
   "devDependencies": {
     "bun-types": "latest",
@@ -16,6 +18,8 @@
   "dependencies": {
     "drizzle-orm": "^0.29.2",
     "hono": "^3.11.11",
+    "npm": "^10.2.5",
+    "pg": "^8.11.3",
     "postgres": "^3.4.3"
   }
 }
